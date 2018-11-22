@@ -1,0 +1,3 @@
+﻿  Source.cpp
+c:\users\asus\source\repos\oop1\oop1\source.cpp(182): warning C4715: 'Menushka': not all control paths return a value
+LINK : fatal error LNK1168: cannot open C:\Users\asus\source\repos\oop1\Debug\oop1.exe for writing
