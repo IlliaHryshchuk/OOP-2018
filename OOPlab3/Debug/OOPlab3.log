@@ -1,29 +1,7 @@
 ﻿  Source.cpp
-c:\users\asus\source\repos\ooplab3\ooplab3\classes.h(176): warning C4584: 'PlayingCoach': base-class 'TeamMember' is already a base-class of 'Coach'
+c:\users\asus\source\repos\ooplab3\ooplab3\classes.h(184): warning C4584: 'PlayingCoach': base-class 'TeamMember' is already a base-class of 'Coach'
   c:\users\asus\source\repos\ooplab3\ooplab3\classes.h(76): note: see declaration of 'TeamMember'
-  c:\users\asus\source\repos\ooplab3\ooplab3\classes.h(147): note: see declaration of 'Coach'
-c:\users\asus\source\repos\ooplab3\ooplab3\source.cpp(65): warning C4305: 'argument': truncation from 'double' to 'T1'
-          with
-          [
-              T1=float
-          ]
-  methods.cpp
-c:\users\asus\source\repos\ooplab3\ooplab3\classes.h(176): warning C4584: 'PlayingCoach': base-class 'TeamMember' is already a base-class of 'Coach'
-  c:\users\asus\source\repos\ooplab3\ooplab3\classes.h(76): note: see declaration of 'TeamMember'
-  c:\users\asus\source\repos\ooplab3\ooplab3\classes.h(147): note: see declaration of 'Coach'
-c:\users\asus\source\repos\ooplab3\ooplab3\methods.cpp(313): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-c:\users\asus\source\repos\ooplab3\ooplab3\methods.cpp(378): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-c:\users\asus\source\repos\ooplab3\ooplab3\methods.cpp(417): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\asus\source\repos\ooplab3\ooplab3\methods.cpp(452): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\asus\source\repos\ooplab3\ooplab3\methods.cpp(601): warning C4553: '==': result of expression not used; did you intend '='?
-c:\users\asus\source\repos\ooplab3\ooplab3\methods.cpp(693): warning C4101: 'a': unreferenced local variable
-c:\users\asus\source\repos\ooplab3\ooplab3\methods.cpp(815): warning C4101: 'a': unreferenced local variable
-c:\users\asus\source\repos\ooplab3\ooplab3\methods.cpp(1104): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-c:\users\asus\source\repos\ooplab3\ooplab3\methods.cpp(1105): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\asus\source\repos\ooplab3\ooplab3\methods.cpp(1168): warning C4244: '*=': conversion from 'float' to 'int', possible loss of data
-  Generating Code...
-c:\users\asus\source\repos\ooplab3\ooplab3\methods.cpp(221): warning C4715: 'FCteam::showAllTeams': not all control paths return a value
-c:\users\asus\source\repos\ooplab3\ooplab3\methods.cpp(289): warning C4715: 'FCteam::showRegisteredTeams': not all control paths return a value
-c:\users\asus\source\repos\ooplab3\ooplab3\methods.cpp(699): warning C4715: 'Coach::hireCoach': not all control paths return a value
-c:\users\asus\source\repos\ooplab3\ooplab3\methods.cpp(821): warning C4715: 'FCnurse::hireNurse': not all control paths return a value
+  c:\users\asus\source\repos\ooplab3\ooplab3\classes.h(155): note: see declaration of 'Coach'
+c:\users\asus\source\repos\ooplab3\ooplab3\source.cpp(82): warning C4018: '<': signed/unsigned mismatch
+c:\users\asus\source\repos\ooplab3\ooplab3\source.cpp(190): warning C4018: '<': signed/unsigned mismatch
   OOPlab3.vcxproj -> C:\Users\asus\source\repos\OOPlab3\Debug\OOPlab3.exe

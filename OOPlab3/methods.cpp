@@ -977,7 +977,8 @@ void Coach::addPoints()
 
 Tournament::Tournament()//4
 {
-
+	this->fan = new Fan;
+	this->fcteam = new FCteam;
 }
 Tournament::~Tournament()
 {
@@ -987,6 +988,9 @@ Tournament::~Tournament()
 
 FCteam::FCteam()
 {
+	this->fcnurse = new FCnurse;
+	this->coach = new Coach;
+	this->player = new Player;
 }
 FCteam::~FCteam()
 {
@@ -994,6 +998,9 @@ FCteam::~FCteam()
 }
 FCteam::FCteam(int money, bool *win) : money(300), isWin(false) //5
 {
+	this->fcnurse = new FCnurse;
+	this->coach = new Coach;
+	this->player = new Player;
 }
 
 Player::Player()

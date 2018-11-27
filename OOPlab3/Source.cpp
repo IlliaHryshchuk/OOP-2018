@@ -4,6 +4,19 @@
 #include <string>
 #include <ctime>
 #include "classes.h"
+#include <vector>
+#include <list>
+#include <deque>
+#include <set>
+#include <map>
+#include <stack>
+#include <queue>
+#include <iterator> 
+#include <algorithm>
+#include <functional>
+
+
+
 using namespace std;
 
 //1
@@ -37,7 +50,7 @@ int main() //8?,11?
 	//Player newbye;
 	//newbye = player;
 	//newbye.vuvtmp();
-	
+
 	//MyOverloads mov;
 	//mov.setstr();
 	//mov = mov + " test";								//+
@@ -58,16 +71,142 @@ int main() //8?,11?
 	//cout << ex.sum(5, 2);
 	//cout << endl << ex.sum(12.5, 8.5);
 
-	CharityOrganisation<string, string> charity;
-	charity.setLocation("Malaysia");
-	charity.getLocation();
-	CharityOrganisation<float, float> charityOrg;
-	charityOrg.setLocation(256.7);
-	charityOrg.getLocation();
+	//CharityOrganisation<string, string> charity;
+	//charity.setLocation("Malaysia");
+	//charity.getLocation();
+	//CharityOrganisation<float, float> charityOrg;
+	//charityOrg.setLocation(256.7);
+	//charityOrg.getLocation();
+	//cout << "\n-----------------------------------------\n";
+	vector<Player> zoria(10);
+	for (int i = 0; i < zoria.size(); i++)
+	{
+		zoria[i].score();
+	}
 
-
-
-	cout << "\n-----------------------------------------\n";
+	Player jenya;
+	vector<Player>::iterator i1;
+	for (i1 = zoria.begin(); i1 != zoria.end(); ++i1) {
+		(*i1) = jenya;
+		(*i1).setName("jeka");
+	}
+	for (i1 = zoria.begin(); i1 != zoria.end(); ++i1) {
+		cout << (*i1).getname() << " ";
+	}
+	zoria.clear();
+	//cout << "\n-----------------------------------------\n";
+	list<int> tours;
+	tours.push_back(4);
+	tours.push_front(5);
+	if (!tours.empty())
+	{
+		tours.sort();
+	}
+	plus<int> a;
+	MyOverloads f1, f2;
+	int c = a(f1.val, f2.val);
+	remove(tours.begin(), tours.end(),4);
+	//cout << "\n-----------------------------------------\n";
+	deque<Fan> fans(30);
+	Fan ivan;
+	fans.resize(33, ivan);
+	fans.pop_front();
+	int sizeDQ = fans.max_size();
+	//cout << "\n-----------------------------------------\n";
+	set<string> table;
+	Player andrii, valerii, anatolii, mikola, nikolai;
+	andrii.setName("andrii");
+	valerii.setName("valerii");
+	anatolii.setName("anatolii");
+	mikola.setName("mikola");
+	nikolai.setName("mikola");
+	table.insert(andrii.getname());
+	table.insert(valerii.getname());
+	table.insert(anatolii.getname());
+	table.insert(mikola.getname());
+	table.insert(nikolai.getname());
+	int size = table.size();
+//	cout << "\n-----------------------------------------\n";
+	multiset<string> tableOfPlayer;
+	tableOfPlayer.insert(andrii.getname());
+	tableOfPlayer.insert(valerii.getname());
+	tableOfPlayer.insert(anatolii.getname());
+	tableOfPlayer.insert(mikola.getname());
+	tableOfPlayer.insert(nikolai.getname());
+	int sizeOfPlayers = tableOfPlayer.size();
+	tableOfPlayer.find("andrii");
+	tableOfPlayer.erase("andrii");
+	//cout << "\n-----------------------------------------\n";
+	MyOverloads b1, b2, b3;
+	map<string, int> bmap;
+	bmap.insert(pair<string, int>(andrii.getname(), 15));
+	bmap.insert(pair<string, int>(anatolii.getname(), 25));
+	bmap.insert(pair<string, int>(valerii.getname(), 19));
+	for (auto oop = bmap.begin(); oop != bmap.end(); ++oop)
+	{
+		cout << oop->first << " : " << oop->second << endl;
+	}
+	map<string, int>::iterator i2;
+	
+	for (i2 = bmap.end(); i2 != bmap.begin(); --i2)
+	{
+		if (i2 != bmap.end())
+		{
+			cout << (*i2).second << " " << (*i2).first << " ";
+		}
+	}
+	if (!bmap.empty())
+		bmap.clear();
+	//cout << "\n-----------------------------------------\n";
+	multimap<string, MyOverloads> mnmap = {
+				{"first", b1},
+	};
+	mnmap.insert(std::pair<string, MyOverloads>("second", b2));
+	multimap<string, MyOverloads>::iterator it = mnmap.find("first");
+	mnmap.erase(it);
+	size = mnmap.size();
+	//cout << "\n-----------------------------------------\n";
+	stack<Fan> mongoli;
+	Fan toxa(5), lubart(9), jordan(4), platon(9);
+	mongoli.emplace(platon);
+	mongoli.push(lubart);
+	stack<Fan> tatari;
+	tatari.push(toxa);
+	tatari.emplace(jordan);
+	logical_and<bool> la;
+	if (la(!tatari.empty(), !mongoli.empty()))
+	{
+		tatari.swap(mongoli);
+	}
+	//cout << "\n-----------------------------------------\n";
+	queue<Fan> zabiletami;
+	zabiletami.emplace(jordan);
+	not_equal_to<int> aa;
+	if (aa(zabiletami.size(),2))
+	{
+		zabiletami.push(platon);
+	}
+	if (zabiletami.empty())
+	{
+		for (int i = 0; i < zabiletami.size(); i++) {
+			cout << zabiletami.front().getAge();
+			zabiletami.pop();
+		}
+	}
+	//cout << "\n-----------------------------------------\n";
+	priority_queue<string> zabananami;
+	zabananami.emplace(andrii.getname());
+	zabananami.push(anatolii.getname());
+	zabananami.emplace(mikola.getname());
+	while (!zabananami.empty())
+	{
+		cout << zabananami.top() << " ";
+		zabananami.pop();
+	}
+	//cout << "\n-----------------------------------------\n";
+	//cout << "\n-----------------------------------------\n";
+	//cout << "\n-----------------------------------------\n";
+	
 
 	Tournament *tournament = new Tournament;
 	//tournament->nameOfTournament += " !";															//+=

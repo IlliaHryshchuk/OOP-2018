@@ -113,7 +113,15 @@ public:
 	Player();//4
 	Player(int speed, int health, int height, int weight, int skill, int power);
 	Player(int a);
-	~Player();
+	~Player() override;
+	void setName(string str)
+	{
+		this->name = str;
+	}
+	string getname()
+	{
+		return this->name;
+	}
 	void paysalary() override;
 	void addPoints() override;
 	void showPoints() override;
@@ -213,6 +221,8 @@ class MyOverloads
 private:
 	string str;
 public:
+	int val;
+	~MyOverloads() {};
 	MyOverloads() {};
 	void setstr();
 	void getstr();
