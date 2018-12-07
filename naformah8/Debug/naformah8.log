@@ -1,0 +1,11 @@
+﻿  fanat.cpp
+c:\users\asus\source\repos\naformah8\naformah8\header.h(184): warning C4584: 'PlayingCoach': base-class 'TeamMember' is already a base-class of 'Coach'
+  c:\users\asus\source\repos\naformah8\naformah8\header.h(76): note: see declaration of 'TeamMember'
+  c:\users\asus\source\repos\naformah8\naformah8\header.h(155): note: see declaration of 'Coach'
+  first.cpp
+c:\users\asus\source\repos\naformah8\naformah8\header.h(184): warning C4584: 'PlayingCoach': base-class 'TeamMember' is already a base-class of 'Coach'
+  c:\users\asus\source\repos\naformah8\naformah8\header.h(76): note: see declaration of 'TeamMember'
+  c:\users\asus\source\repos\naformah8\naformah8\header.h(155): note: see declaration of 'Coach'
+  Generating Code...
+  fanat.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  naformah8.vcxproj -> C:\Users\asus\source\repos\naformah8\Debug\naformah8.exe
